@@ -358,6 +358,14 @@ Steps for TA examination:
 Each group member should be able to answer all of the following questions. The TA will ask each person one question selected at random, and the student must be able to answer the question to get credit for the lab.
 
 - Q1: What is a `Jenkinsfile`, and where is it usually located? What does it do?
+    - A: A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline and is checked into source control. It is usually located in the root directory, and as explained before it defines the Jenkins pipeline.
 - Q2: What do stages and steps do? Can they be visualized? Show the TA an example.
+    - A: 
+        - Stage: Syntax block that describes a stage of a pipeline.
+        - Step: Commands/executables to be run within a stage
 - Q3: What is the use of the `agent` in each stage? Why are they using different docker images for different stages?
+    - A:
+        - Use of Agent in each stage: Agent specifies the environment where a particular stage/pipeline will run, ensuring correct tools and dependencies are available.
+        - Why using different docker images: Different stages require different dependencies, and the different images optimize resource usage for the builds.
 - Q4: What are artifacts in Jenkins usually used for?
+    - A: Files/data generated from a build such as JAR files, reports or logs. Can be used to check and verify that the build was successful, and that the right output was produced.
